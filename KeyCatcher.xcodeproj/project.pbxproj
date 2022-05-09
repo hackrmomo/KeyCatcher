@@ -7,19 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA99C33B282704C5001D1DEA /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99C33A282704C5001D1DEA /* StringExtensions.swift */; };
+		FA99C33E28270FFA001D1DEA /* ShortcutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99C33D28270FFA001D1DEA /* ShortcutController.swift */; };
 		FAAC81A1282639BC00BA939C /* KeyCatcherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC81A0282639BC00BA939C /* KeyCatcherApp.swift */; };
 		FAAC81A3282639BC00BA939C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC81A2282639BC00BA939C /* ContentView.swift */; };
 		FAAC81A5282639BD00BA939C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAAC81A4282639BD00BA939C /* Assets.xcassets */; };
 		FAAC81A8282639BD00BA939C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAAC81A7282639BD00BA939C /* Preview Assets.xcassets */; };
+		FAAC81B7282654DC00BA939C /* PermissionsChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC81B6282654DC00BA939C /* PermissionsChecker.swift */; };
+		FAAC81BA282659FE00BA939C /* Shortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC81B9282659FE00BA939C /* Shortcut.swift */; };
+		FAAC81BC28265B6A00BA939C /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC81BB28265B6A00BA939C /* Keys.swift */; };
+		FAF2AB892827A29800BD0943 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = FAF2AB882827A29800BD0943 /* Collections */; };
+		FAF2AB8B2827A29800BD0943 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = FAF2AB8A2827A29800BD0943 /* DequeModule */; };
+		FAF2AB8D2827A29800BD0943 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = FAF2AB8C2827A29800BD0943 /* OrderedCollections */; };
+		FAF2AB8F2827AF9000BD0943 /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2AB8E2827AF9000BD0943 /* Shell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA99C33A282704C5001D1DEA /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		FA99C33D28270FFA001D1DEA /* ShortcutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutController.swift; sourceTree = "<group>"; };
 		FAAC819D282639BC00BA939C /* KeyCatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyCatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAC81A0282639BC00BA939C /* KeyCatcherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCatcherApp.swift; sourceTree = "<group>"; };
 		FAAC81A2282639BC00BA939C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FAAC81A4282639BD00BA939C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAAC81A7282639BD00BA939C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FAAC81A9282639BD00BA939C /* KeyCatcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeyCatcher.entitlements; sourceTree = "<group>"; };
+		FAAC81B22826412100BA939C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FAAC81B428264AF800BA939C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FAAC81B6282654DC00BA939C /* PermissionsChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsChecker.swift; sourceTree = "<group>"; };
+		FAAC81B9282659FE00BA939C /* Shortcut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shortcut.swift; sourceTree = "<group>"; };
+		FAAC81BB28265B6A00BA939C /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		FAF2AB8E2827AF9000BD0943 /* Shell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +44,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF2AB892827A29800BD0943 /* Collections in Frameworks */,
+				FAF2AB8B2827A29800BD0943 /* DequeModule in Frameworks */,
+				FAF2AB8D2827A29800BD0943 /* OrderedCollections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA99C3392827049C001D1DEA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA99C33A282704C5001D1DEA /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA99C33C28270FE6001D1DEA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA99C33D28270FFA001D1DEA /* ShortcutController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		FAAC8194282639BC00BA939C = {
 			isa = PBXGroup;
 			children = (
 				FAAC819F282639BC00BA939C /* KeyCatcher */,
 				FAAC819E282639BC00BA939C /* Products */,
+				FAAC81B12826412000BA939C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +89,11 @@
 		FAAC819F282639BC00BA939C /* KeyCatcher */ = {
 			isa = PBXGroup;
 			children = (
+				FA99C33C28270FE6001D1DEA /* Controllers */,
+				FA99C3392827049C001D1DEA /* Extensions */,
+				FAAC81B8282659D600BA939C /* Models */,
+				FAAC81B5282654AD00BA939C /* Utils */,
+				FAAC81B428264AF800BA939C /* Info.plist */,
 				FAAC81A0282639BC00BA939C /* KeyCatcherApp.swift */,
 				FAAC81A2282639BC00BA939C /* ContentView.swift */,
 				FAAC81A4282639BD00BA939C /* Assets.xcassets */,
@@ -67,6 +109,32 @@
 				FAAC81A7282639BD00BA939C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAAC81B12826412000BA939C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAAC81B22826412100BA939C /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAAC81B5282654AD00BA939C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FAAC81B6282654DC00BA939C /* PermissionsChecker.swift */,
+				FAF2AB8E2827AF9000BD0943 /* Shell.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FAAC81B8282659D600BA939C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAAC81B9282659FE00BA939C /* Shortcut.swift */,
+				FAAC81BB28265B6A00BA939C /* Keys.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +153,11 @@
 			dependencies = (
 			);
 			name = KeyCatcher;
+			packageProductDependencies = (
+				FAF2AB882827A29800BD0943 /* Collections */,
+				FAF2AB8A2827A29800BD0943 /* DequeModule */,
+				FAF2AB8C2827A29800BD0943 /* OrderedCollections */,
+			);
 			productName = KeyCatcher;
 			productReference = FAAC819D282639BC00BA939C /* KeyCatcher.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +186,9 @@
 				Base,
 			);
 			mainGroup = FAAC8194282639BC00BA939C;
+			packageReferences = (
+				FAF2AB872827A29800BD0943 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = FAAC819E282639BC00BA939C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +215,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA99C33B282704C5001D1DEA /* StringExtensions.swift in Sources */,
 				FAAC81A3282639BC00BA939C /* ContentView.swift in Sources */,
+				FAAC81BA282659FE00BA939C /* Shortcut.swift in Sources */,
+				FAAC81B7282654DC00BA939C /* PermissionsChecker.swift in Sources */,
 				FAAC81A1282639BC00BA939C /* KeyCatcherApp.swift in Sources */,
+				FA99C33E28270FFA001D1DEA /* ShortcutController.swift in Sources */,
+				FAF2AB8F2827AF9000BD0943 /* Shell.swift in Sources */,
+				FAAC81BC28265B6A00BA939C /* Keys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +358,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KeyCatcher/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,6 +386,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KeyCatcher/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -338,6 +422,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FAF2AB872827A29800BD0943 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FAF2AB882827A29800BD0943 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAF2AB872827A29800BD0943 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		FAF2AB8A2827A29800BD0943 /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAF2AB872827A29800BD0943 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		FAF2AB8C2827A29800BD0943 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAF2AB872827A29800BD0943 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FAAC8195282639BC00BA939C /* Project object */;
 }
